@@ -29,11 +29,19 @@ namespace DataAccess
 		public SQL()
 			: this("admin")
 		{
+        }
+
+		public SQL(bool useAppSettings, string connection)
+        {
+			if (useAppSettings)
+				connectionString = connection;
+			else//use web.config
+				connectionString = ConfigurationManager.ConnectionStrings[connection].ToString();
 		}
 
-		public SQL(string connectionStringName)
+        public SQL(string connectionStringName)
 		{
-			if (ConfigurationManager.ConnectionStrings[connectionStringName] == null)
+            if (ConfigurationManager.ConnectionStrings[connectionStringName] == null)
 				throw new Exception("\"" + connectionStringName + "\" connection string not found in config file.");
 			else
 				connectionString = ConfigurationManager.ConnectionStrings[connectionStringName].ToString();
@@ -42,7 +50,7 @@ namespace DataAccess
 		public SQL(string connectionStringName, int timeout)
 			: this(connectionStringName)
 		{
-			Timeout = timeout;
+            Timeout = timeout;
 		}
 
 		public void OpenConnection()

@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\imorales\\Desktop\\net\\Web\\api.multitracks.com\\api.multitracks.com.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\imorales\\Desktop\\net\\Core\\MTDataAccess\\MTDataAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\imorales\\Desktop\\net\\Core\\MTDataAccess\\MTDataAccess.csproj",
+        "projectName": "MTDataAccess",
+        "projectPath": "C:\\Users\\imorales\\Desktop\\net\\Core\\MTDataAccess\\MTDataAccess.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\imorales\\Desktop\\net\\Web\\api.multitracks.com\\api.multitracks.com.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\imorales\\Desktop\\net\\Web\\api.multitracks.com\\api.multitracks.com.csproj",
+        "projectName": "api.multitracks.com",
+        "projectPath": "C:\\Users\\imorales\\Desktop\\net\\Web\\api.multitracks.com\\api.multitracks.com.csproj",
+        "packagesPath": "C:\\Users\\imorales\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\imorales\\Desktop\\net\\Web\\api.multitracks.com\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\imorales\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\imorales\\Desktop\\net\\Core\\MTDataAccess\\MTDataAccess.csproj": {
+                "projectPath": "C:\\Users\\imorales\\Desktop\\net\\Core\\MTDataAccess\\MTDataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.115\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

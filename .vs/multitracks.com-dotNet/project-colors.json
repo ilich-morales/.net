@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "564e4868-9dc3-4750-a05a-337a0ec7d421": {
+      "ProjectGuid": "564e4868-9dc3-4750-a05a-337a0ec7d421",
+      "DisplayName": "MTDataAccess",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    },
+    "2738432e-db69-4361-a538-bb240b80c48f": {
+      "ProjectGuid": "2738432e-db69-4361-a538-bb240b80c48f",
+      "DisplayName": "api.multitracks.com",
+      "ColorIndex": 1
+    },
+    "87ed2c8e-902b-4400-a71a-41bff7b98f13": {
+      "ProjectGuid": "87ed2c8e-902b-4400-a71a-41bff7b98f13",
+      "DisplayName": "multitracks.com",
+      "ColorIndex": 2
+    },
+    "c0455f77-4c86-44ab-a96f-fd433ba1c3bb": {
+      "ProjectGuid": "c0455f77-4c86-44ab-a96f-fd433ba1c3bb",
+      "DisplayName": "MultiTracksDB",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "2d67c70e-a12c-41ca-a54a-4faa6d9a3be6",
+		"name": "api.multitracks.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5193925"
+	},
+	"item": [
+		{
+			"name": "Add Artist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Ed Sheeran\",\r\n  \"biography\": \"Edward Christopher Sheeran MBE (born 17 February 1991) is an English singer-songwriter. Born in Halifax, West Yorkshire, and raised in Framlingham, Suffolk, he began writing songs around the age of eleven. In early 2011, Sheeran independently released the extended play No. 5 Collaborations Project. He signed with Asylum Records the same year. Sheeran's debut album, + ('Plus'), was released in September 2011 and topped the UK Albums Chart. It contained his first hit single 'The A Team'.\",\r\n  \"imageURL\": \"https://www.edsheeran.com/sites/g/files/g2000015851/files/2023-03/ES_EyesClosed.jpg\",\r\n  \"heroURL\": \"https://estaticos-cdn.prensaiberica.es/clip/68fa0ac3-37b5-4330-b0c8-3e728c6c82b0_16-9-discover-aspect-ratio_default_0.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7008/api/Artists/Add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7008",
+					"path": [
+						"api",
+						"Artists",
+						"Add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Artists",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Songs Paginated",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7008/api/Song/List/:pageSize/:pageIndex/:artistID",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7008",
+					"path": [
+						"api",
+						"Song",
+						"List",
+						":pageSize",
+						":pageIndex",
+						":artistID"
+					],
+					"variable": [
+						{
+							"key": "pageSize",
+							"value": "3"
+						},
+						{
+							"key": "pageIndex",
+							"value": "1"
+						},
+						{
+							"key": "artistID",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
